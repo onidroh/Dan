@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php 
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Comando\Ladrar;
+
+//run
+$aplicacion = new Application();
+
+$aplicacion->add(new Ladrar());
+$aplicacion->run();
+
+?>
