@@ -7,7 +7,7 @@ use Symfony\Component\Console\Application;
 use Comando\Ladrar;
 
 //run
-$aplicacion = new Application();
+$aplicacion = new Application('Dan Asistente por Consola', '0.1');
 
 $aplicacion->add(new Ladrar());
 $aplicacion->run();
